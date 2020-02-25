@@ -1,6 +1,6 @@
 function coseno(x, cuantos)
 {
-    var op=0;
+    var op=0, num=0;
     var expo=0,negativo=1;
     for(var i=1; i<=cuantos; i++)
     {
@@ -9,8 +9,8 @@ function coseno(x, cuantos)
         {
             factorial*=k;
         }
-
-        op+= negativo*(x**expo/factorial);
+        num=x**expo;
+        op+= negativo*(num/factorial);
         expo+=2;
         negativo*=-1;
     }
